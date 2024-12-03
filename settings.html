@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>QuickSearch Plus 设置</title>
+  <style>
+    body {
+      width: 600px;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .engine-item {
+      display: flex;
+      margin-bottom: 10px;
+      gap: 10px;
+      align-items: center;
+    }
+    .name-input {
+      width: 100px; /* 搜索引擎名称输入框变短 */
+      padding: 5px;
+    }
+    .url-input {
+      flex-grow: 1; /* 搜索引擎链接输入框变长 */
+      padding: 5px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+    .delete-btn {
+      background-color: #ff4444;
+      color: white;
+      border: none;
+    }
+    .add-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>搜索引擎设置</h1>
+  <div id="engineList"></div>
+  <button id="addEngine" class="add-btn">添加搜索引擎</button>
+  <button id="saveEngines" class="add-btn">保存设置生效</button>
+
+  <script src="settings.js"></script>
+</body>
+</html>

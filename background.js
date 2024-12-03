@@ -15,6 +15,10 @@ chrome.storage.sync.get('searchEngines', (data) => {
     createContextMenus();
 });
 
+chrome.action.onClicked.addListener(() => {
+    chrome.runtime.openOptionsPage();
+});
+
 function createContextMenus() {
     // 清除所有现有的上下文菜单
     chrome.contextMenus.removeAll(() => {
